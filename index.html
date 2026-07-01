@@ -14,24 +14,26 @@
             justify-content: center;
         }
         button{
-            height: 300px;
-            width: 100px;
+            height: 100px;
+            width: 300px;
             border-radius: 20px;
             border: transparent;
             font-size: 40px;
             position: relative;
+            cursor: pointer;
         }
-        button::before{
-            width: 320px;
-            height: 120px;
-            background-color: cornsilk;
-            border-radius: 20px;
-            position: absolute;
-            top: -9;
-            left: -9;
-            background-image: conic-gradient(rgb(185, 42, 185), rgb(201, 82, 102), cyan, lightgreen, lightyellow );
-            z-index: -1;
-        }
+        button::before {
+    content: "";
+    width: 320px;
+    height: 120px;
+    background-color: cornsilk;
+    border-radius: 20px;
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    background-image: conic-gradient(rgb(185, 42, 185), rgb(201, 82, 102), cyan, lightgreen, lightyellow);
+    z-index: -1;
+}
     </style>
 </body>
 </html>
