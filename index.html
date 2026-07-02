@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
- <style>
-        body{
-            background-color:beige;
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: beige;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        button{
+        button {
             height: 100px;
             width: 300px;
             border-radius: 20px;
-            border: transparent;
+            border: none;
+            background-color: white;
             font-size: 40px;
             position: relative;
             cursor: pointer;
@@ -25,7 +27,6 @@
             content: "";
             width: 320px;
             height: 120px;
-            background-color: cornsilk;
             border-radius: 20px;
             position: absolute;
             top: -9px;
@@ -34,7 +35,8 @@
             z-index: -1;
         }
     </style>
+</head>
 <body>
-   <button class="button">Click Here</button>
+    <button class="button">Click Here</button>
 </body>
 </html>
