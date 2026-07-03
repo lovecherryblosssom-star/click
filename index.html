@@ -12,6 +12,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+        body.dark {
+            background-color: #1a1a2e;
         }
         button {
             height: 100px;
@@ -37,6 +41,6 @@
     </style>
 </head>
 <body>
-    <button class="button">Click Here</button>
+    <button class="button" onclick="document.body.classList.toggle('dark')">Click Here</button>
 </body>
 </html>
